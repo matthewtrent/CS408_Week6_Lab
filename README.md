@@ -1,29 +1,11 @@
-# web-dev-starter
+# M6.2 Lab Letterhead formatting
+This lab was tasked to create a basic letter head such that there were background images and a logo with the text being in two columns.
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+This lab expands upon what was previously learned with CSS to look into how to make backwards compatible CSS files and overwriting sections of CSS. We also did basic javascript functionality for the Radio Buttons. 
 
-## Getting Started
+## How to run
+    1. Clone or download the code from the repository
+    2. Launch the code in Visual Studio Code
+    3. Start a Live Preview Server
 
-To get started, clone this repository and run the following commands:
-
-```bash
-npm install
-```
-This will install the necessary dependencies for the project.
-
-## Development
-
-It is recommended to use the VSCode Live Server extension to run the project
-locally. This will allow you to see changes in real-time as you make them. There
-is no need to run a build process or refresh the page manually. Additionally,
-you do not need to setup a local server to run the project.
-
-## Testing
-
-To run the tests for the project, run the following command:
-
-```bash
-npm test
-```
+    I was unable to get the background images to load when I only launched the html.index files

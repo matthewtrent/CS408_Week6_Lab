@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
     <title>Fancy letterheaded paper</title>
     
   </head>
@@ -11,6 +12,34 @@
     <article>
       <h1>Awesome<br>Company</h1>
 
+      <div class = "article-text">
+        <h2>Lorem Ipsum</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dapibus viverra purus et mattis. Nulla quis augue id elit convallis fringilla et non enim. Proin sodales metus cursus condimentum rhoncus. Nulla maximus odio in felis cursus rutrum. Donec ac mauris egestas, porttitor lorem quis, lacinia erat. In finibus quis libero et semper. Suspendisse mollis odio laoreet nisi porta, id congue orci convallis. Duis et sapien convallis, pellentesque nibh ac, convallis arcu. Aliquam erat volutpat. </p>
+
+        <h2>Lorem Ipsum</h2>
+        <hr>
+        <p>Sed malesuada, mi eu pharetra efficitur, tortor ipsum vehicula risus, id sodales elit mi quis mauris. Pellentesque id massa laoreet, interdum lectus vulputate, convallis massa. Aliquam sagittis accumsan volutpat. Fusce velit lorem, posuere nec magna at, malesuada hendrerit ante. Proin ultrices est gravida lacus fringilla molestie. Pellentesque congue vitae lectus sit amet aliquam. Vestibulum et vestibulum nibh. Pellentesque bibendum, lorem vitae volutpat fermentum, arcu massa luctus velit, sed ultricies mi risus ut enim. Etiam et erat in elit imperdiet ullamcorper nec aliquet diam. Curabitur et justo a libero luctus suscipit sed sed magna. Aenean laoreet posuere orci ac molestie. Ut iaculis metus id elit vehicula, nec cursus elit bibendum. Ut molestie, nisi vitae lacinia vehicula, nibh dolor vestibulum purus, eu maximus nisl nibh quis sem. Aenean placerat tincidunt dictum. Donec vitae gravida neque.</p>
+
+        <form>
+          <fieldset>
+            <legend>Choose an option:</legend>
+            <div>
+              <input type="radio" id="choice1" name = "choice" value="This is Choice One">
+              <label for="choice1">This is Choice One</label>
+              <br>
+              <input type="radio" id="choice2" name = "choice" value="This is Choice Two">
+              <label for="choice2">This is Choice Two</label>
+              <br>
+              <input type="radio" id="choice3" name = "choice" value="This is Choice Three">
+              <label for="choice3">This is Choice Three</label>
+              <br>
+              <button onclick="radioButtonPress()">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+        
+      </div>
       <address>
         <p>The Awesome Company</p>
         <p>102-112 Frail Bend Bridge<br>
@@ -21,4 +50,24 @@
       </address>
     </article>
   </body>
+
+  <script>
+      function radioButtonPress() {
+        const radioButtons = document.getElementsByName('choice');
+        let selectedValue;
+
+        for (let i = 0; i < radioButtons.length; i++) {
+          if (radioButtons[i].checked) {
+            selectedValue = radioButtons[i].value;
+            break;
+          }
+        }
+
+        if (selectedValue) {
+          alert(selectedValue);
+        } else {
+          alert('Please select an option.');
+        }
+      }
+  </script>
 </html>
